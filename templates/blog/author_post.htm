@@ -1,0 +1,10 @@
+{% for i in post %}
+<h2>post by {{author |capfirst}}</h2>
+<h2>{{i.title}}</h2>
+<p>{{i.create_at}} , {{i.update_at}}</p>
+<p>{{i.author}}</p>
+<br>
+<p>{{i.description}}</p>
+
+<hr>
+{% endfor %}

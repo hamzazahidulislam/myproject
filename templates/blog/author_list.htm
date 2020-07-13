@@ -1,0 +1,6 @@
+{% for i in authors %}
+
+<a href="{% url 'author-post' i.name %}">
+    <p>{{i.name}}</p>
+</a>
+{% endfor %}

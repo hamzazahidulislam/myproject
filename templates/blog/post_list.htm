@@ -1,0 +1,4 @@
+{% for i in  post_list %}
+<p><a href="{% url 'post-detail'  i.id%}">{{i.title}}</a></p>
+<hr>
+{% endfor %}
